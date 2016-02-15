@@ -10,7 +10,7 @@ int	main(int argc, char **argv)
 	fd = open(argv[1], O_RDONLY, S_IREAD);
 	printf("%d\n", fd);
 	printf("%d\n", get_next_line(fd, line));
-	printf("%d\n", get_next_line(fd, line));
+	printf("%s\n", line);
 	close(fd);
 	return (0);
 }
